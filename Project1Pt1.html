@@ -1,0 +1,77 @@
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horsing Around Victoria+</title>
+    <link rel="stylesheet" href="Project1Pt1.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Horsing Around Victoria+</h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#trail-list">Trails</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="home" class="section">
+        <h2>Welcome to Horsing Around Victoria+</h2>
+        <p>This is the place for equestrians looking for horseback riding trails. Whether you're a seasoned rider or just starting out, we've got something for everyone. Explore our collection of trails, learn how to prepare for hitting the trails, and connect with fellow riders.</p>
+        <img src="HorthHill.jpeg">
+      </div>
+      <div class="flex-container">
+        <section id="trail-list">
+          <h2>Popular Trails</h2>
+          <input type="text" id="search-bar" placeholder="Search trails..." oninput="filterTrails()">
+          <ul id="trail-list-ul">
+            <li onclick="showTrailDetails('Elk Lake Park')">Elk Lake Park</li>
+            <li onclick="showTrailDetails('Horth Hill Park')">Horth Hill Park</li>
+            <li onclick="showTrailDetails('East Sooke Park')">East Sooke Park</li>
+          </ul>
+          <button id="sort-trails-button">Sort Trails Alphabetically</button>
+          <button id="highlight-random-trail">Pick A Random Trail</button>
+        </section>
+
+        <section id="trail-details">
+          <h2>Trail Details</h2>
+          <p id="trail-info">Select a trail to see the details.</p>
+          <div id="trail-reviews">
+            <h3>Reviews</h3>
+            <ul id="reviews-list"></ul>
+            <textarea id="review-text" placeholder="Leave a review..."></textarea>
+            <button onclick="addReview()">Submit Review</button>
+          </div>
+        </section>
+        <section>
+          <form id="add-trail-form">
+            <label for="trail-name">Trail Name:</label>
+            <input type="text" id="trail-name" required>
+            <label for="trail-description">Description:</label>
+
+            <textarea id="trail-description" required></textarea>
+            <label for="trail-location">Location:</label>
+            <input type="text" id="trail-location" required>
+            <label for="difficulty-level">Difficulty Level:</label>
+            <select id="difficulty-level" required>
+              <option value="easy">Easy</option>
+              <option value="moderate">Moderate</option>
+              <option value="difficult">Difficult</option>
+            </select>
+            <button type="submit">Add Trail</button>
+
+          </form>
+        </section>
+
+      </div>
+
+    </main>
+
+    <script src="Project1Pt1.js"></script>
+  </body>
+
+</html>

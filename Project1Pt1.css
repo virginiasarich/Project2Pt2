@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+header {
+  background-color: LightGreen;
+  color: SaddleBrown;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: SaddleBrown;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: FloralWhite;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  color: SaddleBrown
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#trail-list,
+#trail-details {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#trail-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+#trail-list ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#trail-list ul li:hover {
+  background-color: #f0f0f0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  #trail-list,
+  #trail-details {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+#add-trail-form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#add-trail-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#add-trail-form input[type="text"],
+#add-trail-form textarea,
+#add-trail-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#add-trail-form button {
+  background-color: LightGreen;
+  color: SaddleBrown;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-trail-form button:hover {
+  background-color: DarkGreen;
+  color: white;
+}
+  
